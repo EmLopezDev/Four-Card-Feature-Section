@@ -1,0 +1,34 @@
+@use "../util/" as u;
+
+.text-preset-1 {
+    font-size: u.rem(36);
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: u.rem(0.25);
+}
+
+.text-preset-2 {
+    font-size: u.rem(36);
+    font-weight: 200;
+    line-height: 140%;
+    letter-spacing: u.rem(0.25);
+}
+
+.text-preset-3 {
+    font-size: u.rem(20);
+    font-weight: 600;
+    line-height: 135%;
+    letter-spacing: 0;
+}
+
+.text-preset-4 {
+    font-size: u.rem(15);
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.text-preset-5 {
+    font-size: u.rem(13);
+    line-height: 160%;
+    letter-spacing: 0;
+}

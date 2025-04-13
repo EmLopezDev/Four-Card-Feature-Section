@@ -1,0 +1,41 @@
+@use "../util/" as u;
+
+.card {
+    padding: u.rem(32);
+    max-width: u.rem(350);
+    width: 100%;
+    min-width: u.rem(314);
+    height: u.rem(250);
+    background-color: var(--color-white);
+    border-radius: u.rem(6) u.rem(6) u.rem(8) u.rem(8);
+    box-shadow: 0 u.rem(15) u.rem(30) u.rem(-11) rgba(131, 166, 210, 50%);
+
+    &__supervisor {
+        border-top: u.rem(4) solid var(--color-cyan);
+    }
+
+    &__team {
+        border-top: u.rem(4) solid var(--color-red);
+    }
+    &__karma {
+        border-top: u.rem(4) solid var(--color-orange);
+    }
+    &__calculator {
+        border-top: u.rem(4) solid var(--color-blue);
+    }
+
+    &__header {
+        margin-bottom: u.rem(6);
+    }
+
+    &__description {
+        margin-bottom: u.rem(32);
+    }
+
+    &__img {
+        display: block;
+        margin-left: auto;
+        width: u.rem(64);
+        height: u.rem(64);
+    }
+}
