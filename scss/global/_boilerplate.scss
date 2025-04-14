@@ -13,22 +13,10 @@ body {
     width: 100%;
     overflow: auto;
     background-color: var(--color-bg);
-    padding: u.rem(40);
+    padding: u.rem(30);
     font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--color-grey-500);
-}
-
-@media screen and (max-width: u.rem(1200)) {
-    body {
-        padding: u.rem(80) u.rem(54);
-    }
-}
-
-@media screen and (max-width: u.rem(768)) {
-    body {
-        padding: u.rem(56) u.rem(30) u.rem(46);
-    }
 }

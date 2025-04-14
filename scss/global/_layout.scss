@@ -3,7 +3,6 @@
 header {
     width: 100%;
     max-width: u.rem(540);
-    min-width: u.rem(316);
     display: flex;
     flex-direction: column;
     gap: u.rem(16);
@@ -18,6 +17,7 @@ main {
     display: flex;
     gap: u.rem(32);
 }
+
 .section__first {
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@ main {
     align-items: center;
 }
 
-@media screen and (max-width: u.rem(1200)) {
+@include u.breakpoint("medium") {
     main {
         flex-direction: column;
     }
@@ -54,7 +54,11 @@ main {
     }
 }
 
-@media screen and (max-width: u.rem(768)) {
+@include u.breakpoint("small") {
+    header p {
+        padding: 0 u.rem(60);
+    }
+
     .section__first {
         justify-content: center;
     }

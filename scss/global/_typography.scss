@@ -1,14 +1,24 @@
 @use "../util/" as u;
 
 .text-preset-1 {
-    font-size: u.rem(36);
+    font-size: 1.5rem;
+    font-size: clamp(
+        1.5rem,
+        0.16666666666666674rem + 2.7777777777777777vw,
+        2.25rem
+    );
     font-weight: 600;
     line-height: 140%;
     letter-spacing: u.rem(0.25);
 }
 
 .text-preset-2 {
-    font-size: u.rem(36);
+    font-size: 1.5rem;
+    font-size: clamp(
+        1.5rem,
+        0.16666666666666674rem + 2.7777777777777777vw,
+        2.25rem
+    );
     font-weight: 200;
     line-height: 140%;
     letter-spacing: u.rem(0.25);
